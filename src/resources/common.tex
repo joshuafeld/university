@@ -1,0 +1,29 @@
+% use a4 paper size and pass options to article class
+\PassOptionsToClass{a4paper}{article}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
+
+% article class
+\LoadClass{article}
+
+% setup geometry
+\RequirePackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+% encoding
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+
+% math
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{bm}
+\input{math}
+
+% tikz
+\RequirePackage{tikz}
+
+% color
+\RequirePackage{xcolor}
+\input{color}
+
